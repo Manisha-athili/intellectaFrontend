@@ -1,0 +1,27 @@
+.form-floating {
+  position: relative;
+  margin: 1rem 0;
+}
+.floating-input {
+  width: 100%;
+  padding: 1rem 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-floating label {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: white;
+  padding: 0 0.25rem;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  color: #666;
+}
+.floating-input:focus + label,
+.floating-input:not(:placeholder-shown) + label {
+  top: -0.7rem;
+  left: 0.4rem;
+  font-size: 0.75rem;
+  color: #333;
+}
