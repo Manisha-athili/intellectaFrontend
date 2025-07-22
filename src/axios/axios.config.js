@@ -1,12 +1,15 @@
 import axios from "axios";
-const baseURL = "https://intellecta-backend.onrender.com"
 
+const baseURL = "https://intellecta-backend.onrender.com";
+
+// General API instance (use this for most API requests)
 export const api = axios.create({
-  baseURL: baseURL,    
-  withCredentials: true,
+  baseURL,
+  withCredentials: true,  // include cookies if needed
 });
 
-const PORT =  5000;
-// export const API = axios.create({ baseURL: `http://localhost:${PORT}/api/auth` });
-
-export const API = axios.create({ baseURL:"https://intellecta-backend.onrender.com" });
+// Specific endpoint (e.g., for auth routes only)
+export const API = axios.create({
+  baseURL: "https://intellecta-backend.onrender.com/api",  // <-- add /api
+  withCredentials: true,
+});
