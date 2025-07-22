@@ -2,10 +2,9 @@ import { useEffect, useState, lazy, Suspense } from 'react';
 import SearchBar from '../Components/Searchbar';
 import FilterBar from '../Components/FilterBar';
 import { getAllPrompts } from '../services/PromptService';
-import useDebounce from '../Features/Prompts/useDebounce';
 import { useDarkMode } from '../Components/CommonUI/DarkModeContext';
 
-const HeroSection = lazy(() => import('../components/HeroSection'));
+const HeroSection = lazy(() => import('../Components/HeroSection'));
 const PromptGrid = lazy(() => import('../Features/Prompts/PromptGrid'));
 const LoadingSpinner = lazy(() => import('../Components/LoadingSpinner'));
 

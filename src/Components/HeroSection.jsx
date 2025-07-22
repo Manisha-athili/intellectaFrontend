@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
 import { Star, Stars, ArrowDown } from "lucide-react";
 import {useNavigate} from 'react-router-dom'
 
