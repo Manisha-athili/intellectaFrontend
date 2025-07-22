@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseURL = "http://localhost:5000/api"
+const baseURL = "https://intellecta-backend.onrender.com"
 
 export const api = axios.create({
   baseURL: baseURL,    
@@ -7,6 +7,6 @@ export const api = axios.create({
 });
 
 const PORT =  5000;
-export const API = axios.create({ baseURL: `http://localhost:${PORT}/api/auth` });
+// export const API = axios.create({ baseURL: `http://localhost:${PORT}/api/auth` });
 
-
+export const API = axios.create({ baseURL:"https://intellecta-backend.onrender.com" });
