@@ -1,6 +1,5 @@
 import { API } from "../axios/axios.config";
 
-;
 
 export const sendRegistrationOtp = (data) => API.post('/register',data)
 export const verifyOtpAndRegisterUser = (data) => API.post('/verify-otp', data);

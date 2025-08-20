@@ -24,5 +24,5 @@ export const api = axios.create({
 
 // Specific endpoint (e.g., for auth routes only)
 export const API = axios.create({
-  baseURL: `${baseURL}/api/auth`
+  baseURL: `${baseURL}/auth`
 });
