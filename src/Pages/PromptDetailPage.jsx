@@ -21,7 +21,7 @@ export default function PromptDetailPage() {
   const [error, setError] = useState("");
   const [basicPromptInput, setBasicPromptInput] = useState("");
   const [userId, setUserId] = useState(null);
-  const [copiedCount, setCopiedCount] = useState(prompt?.copiedCount || 0);
+  const [, setCopiedCount] = useState(prompt?.copiedCount || 0);
 
   const token = localStorage.getItem("token");
 

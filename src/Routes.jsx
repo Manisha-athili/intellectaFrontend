@@ -28,13 +28,13 @@ export default function Router(){
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
             <Route path="/submit" element={<CreatePrompt />} />
-            {/* <Route path="/prompt/:id/edit" element={<EditPrompt />} /> */}
+            <Route path="/prompt/:id/edit" element={<EditPrompt />} />
             <Route path="/prompt/:id/fork" element={<ForkPrompt />} />
             <Route path="/prompts/:id" element={<PromptDetailPage />} /> 
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/starred" element={<StarredPromptsPage />} />
             <Route path="/forkPrompt/:id" element={<ForkPrompt />} />
-            {/* <Route path="/prompt/${newPrompt.data._id}" element={PromptDetailPage}/> */}
+            <Route path="/prompt/${newPrompt.data._id}" element={PromptDetailPage}/>
             <Route path="/settings" element={<AccountSettings/>}/>
             <Route path="/editPrompt/:id" element={<EditPromptPage />} />
              <Route path="*" element={<PageNotFound/>} />

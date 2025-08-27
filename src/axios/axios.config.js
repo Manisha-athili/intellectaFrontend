@@ -16,13 +16,15 @@ const baseURL = import.meta.env.VITE_API_URL;
 
 
 
-// General API instance (use this for most API requests)
+
+// General API instance for all routes
 export const api = axios.create({
-  baseURL,
-  withCredentials: true,  // include cookies if needed
+  baseURL: `${baseURL}/api`,  // Add /api here
+  withCredentials: true,  
 });
 
-// Specific endpoint (e.g., for auth routes only)
+// Specific endpoint for auth routes
 export const API = axios.create({
-  baseURL: `${baseURL}/auth`
+  baseURL: `${baseURL}/api/auth`,  // Add /api here too
+  withCredentials: true,
 });
