@@ -14,6 +14,7 @@ import ProfilePage from "./Pages/ProfilePage";
 import StarredPromptsPage from "./Pages/StarredPromptsPage";
 import AccountSettings from "./Pages/AccountSettings";
 import EditPromptPage from "./Pages/EditPromptPage";
+import EditPrompt from "./Pages/EditPrompt";
 
 
 
